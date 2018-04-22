@@ -7,7 +7,6 @@
 
 import React, {
     Component,
-    PropTypes,
 } from 'react'
 import {
 	ViewPropTypes,
@@ -21,6 +20,9 @@ import {
     ActivityIndicatorIOS,
     ProgressBarAndroid,
 } from 'react-native'
+import {
+	PropTypes
+} from 'prop-types'
 
 import TimerEnhance from 'react-native-smart-timer-enhance'
 
