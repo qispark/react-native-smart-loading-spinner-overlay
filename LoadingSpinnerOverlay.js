@@ -10,6 +10,7 @@ import React, {
     PropTypes,
 } from 'react'
 import {
+	ViewPropTypes,
     View,
     Modal,
     StyleSheet,
@@ -22,6 +23,8 @@ import {
 } from 'react-native'
 
 import TimerEnhance from 'react-native-smart-timer-enhance'
+
+const viewPropTypes = ViewPropTypes || View.propTypes;
 
 const styles = StyleSheet.create({
     overlay: {
@@ -52,8 +55,8 @@ class LoadingSpinnerOverlay extends Component {
     }
 
     static propTypes = {
-        overlayStyle: View.propTypes.style,
-        style: View.propTypes.style,
+        overlayStyle: viewPropTypes.style,
+        style: viewPropTypes.style,
         duration: PropTypes.number,
         delay: PropTypes.number,
         marginTop: PropTypes.number,
